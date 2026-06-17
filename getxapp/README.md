@@ -1,0 +1,3 @@
+# getxapp
+
+GetX Flutter project.
