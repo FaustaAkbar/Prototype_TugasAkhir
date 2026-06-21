@@ -6,8 +6,8 @@ AppState appReducer(AppState state, dynamic action) {
     return state.copyWith(isLoading: action.isLoading);
   }
 
-  if (action is SetMoviesAction) {
-    return state.copyWith(movies: action.movies);
+  if (action is MoviesAction) {
+    return state.copyWith(movies: [...state.movies, ...action.movies]);
   }
 
   return state;
